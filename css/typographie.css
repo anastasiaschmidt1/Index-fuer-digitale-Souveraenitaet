@@ -1,0 +1,157 @@
+@import "variables/colors.css";
+@import "variables/spacing.css";
+
+@font-face {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('../assets/fonts/red-hat-display-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../assets/fonts/red-hat-display-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    src: local(''),
+    url('../assets/fonts/montserrat-v25-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../assets/fonts/montserrat-v25-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../assets/fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../assets/fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+    url('../assets/fonts/montserrat-v25-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../assets/fonts/montserrat-v25-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 200;
+    src: local(''),
+    url('../assets/fonts/montserrat-v25-latin-200italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../assets/fonts/montserrat-v25-latin-200italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+    url('../assets/fonts/montserrat-v25-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../assets/fonts/montserrat-v25-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 600;
+    src: local(''),
+    url('../assets/fonts/montserrat-v25-latin-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../assets/fonts/montserrat-v25-latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+h1, h2, h3, h4 {
+    color: var(--dark-2);
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: var(--spacing-unit-s);
+    padding-top: var(--spacing-unit-s);
+}
+
+h1 {
+    padding: var(--spacing-unit-s);
+    text-align: center;
+}
+
+h4 {
+    color: var(--light-2);
+}
+
+p, ul {
+    color: var(--dark-1);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+}
+
+blockquote, blockquote p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+a {
+    color: var(--dark-2);
+    text-decoration-line: underline;
+}
+
+a:hover {
+    color: var(--dark-3);
+}
+
+strong {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+main p {
+    text-align: justify;
+}
+
+main ul {
+    list-style: square;
+
+}
+
+main li::marker {
+    color: var(--dark-3);
+    font-size: 1.5em;
+}
+
+.introduction-text p, aside ul {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.figure-caption {
+    color: var(--dark-2);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+#fragebogen {
+    color: var(--dark-1);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer p {
+    color: var(--light-3);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+
+footer strong {
+    color: var(--light-3);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer a {
+    color: var(--light-3);
+}

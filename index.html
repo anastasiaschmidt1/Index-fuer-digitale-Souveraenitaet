@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="Dieses Projekt zeigt am Beispiel einer CMS-basierten Webanwendung, wie ein Index für digitale Souveränität erstellt werden kann. Dabei wird das Content Management System TYPO3 näher betrachtet."
+          name="description">
+    <meta content="Anastasia Schmidt" name="author">
+    <!-- Title -->
+    <title>Entwicklung eines Index für digitale Souveränität am Beispiel einer TYPO3-Web-Anwendung</title>
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/variables/colors.css" rel="stylesheet">
+    <link href="css/variables/spacing.css" rel="stylesheet">
+    <link href="css/typographie.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/to-top-button.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!-- Navigation -->
+<header class="header">
+    <input class="menu-btn" id="menu-btn" type="checkbox"/>
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+        <li><a href="#metrik">Metrik</a></li>
+        <li><a href="#fragebogen">DSI-Fragebogen</a></li>
+        <li><a href="#impressum">Impressum</a></li>
+    </ul>
+</header>
+
+<main class="container" role="main">
+    <!-- Project information banner -->
+    <div class="introduction">
+        <img alt="..." class="img-fluid" src="assets/img/businessman-digital-social-media.jpg">
+        <div class="introduction-text">
+            <h1>Konzeption eines Index für digitale Souveränität am Beispiel einer TYPO3-Web-Anwendung</h1>
+            <p>Dieses Projekt zeigt am Beispiel einer CMS-basierten Webanwendung, wie ein Index für digitale
+                Souveränität erstellt werden kann. Dabei wird das Content Management System TYPO3 näher betrachtet.</p>
+        </div>
+    </div>
+
+
+    <!-- Article -->
+    <article>
+
+        <h2>Die Bedeutung von digitaler Souveränität</h2>
+        <p>Digitale Souveränität ist vor allem dann wichtig, wenn eine hohe Abhängigkeit von einzelnen
+            Technologieanbietern besteht. Dann droht die Gefahr, die Kontrolle über die eigene IT und den Informations-
+            und Datenschutz zu verlieren und nationale und EU-weite Anforderungen nicht mehr zu erfüllen. Um die
+            Handlungsfähigkeit des Staates im digitalen Raum langfristig zu sichern und Abhängigkeiten von einzelnen
+            Technologieanbietern zu minimieren, sollten u.a. Open Source und offene Schnittstellen genutzt werden.</p>
+        <p>Gegenwärtig existiert das Problem, dass die Messbarkeit und Vergleichsmöglichkeit der digitalen Souveränität
+            einer Anwendung, die aus mehreren Einzelkomponenten besteht, nicht gegeben ist. Es ist von Interesse, ob die
+            digitale Souveränität einer Anwendung nach einem allgemeinen System erfasst und über einen Index
+            vergleichbar gemacht werden kann. Dieser Artikel beschäftigt sich mit der Konzeption und Evaluation eines
+            solchen Indexes. Dabei wird sich auf den Bereich der Content Management Systeme, darunter TYPO3, beschränkt.
+            Content Management Systeme werden für die Erstellung und Verwaltung von Webseiten eingesetzt und TYPO3 hat
+            in öffentlichen Verwaltungen einen hohen Marktanteil.</p>
+        <p>Das <a href="https://www.weizenbaum-institut.de/"> Weizenbaum-Institut </a> und die <a
+                href="https://osb-alliance.de/">OSB Alliance </a> haben eine Initiative gestartet, um die digitale
+            Souveränität durch einen Index messbar zu machen. Der Index, welcher Parameter aus unterschiedlichen
+            Bereichen untersucht, erstellt ein umfassendes Bild der aktuellen Situation und kann Veränderungen im Level
+            der digitalen Souveränität über die Zeit darstellen. Dadurch kann man Maßnahmen für die Politik, Wirtschaft
+            und Gesellschaft ableiten, um individuelle Indikatoren anzupassen und die politischen Ziele zu erreichen.
+        </p>
+
+        <!-- To-Top Button -->
+        <button id="to-top">↑</button>
+
+
+        <h2 id="metrik">Wie kann die digitale Souveränität gemessen werden?</h2>
+        <p>Gegenwärtig gibt es keine eindeutige Methode zur Messung der digitalen Souveränität.
+            Um einen Ansatz für die Messung zu finden, ist ein Blick auf die Definition erforderlich. Allerdings ist
+            sogar diese nicht eindeutig. Digitale Souveränität wird in verschiedenen Quellen unterschiedlich
+            definiert.
+        <p>
+
+        <blockquote>
+            <p><strong>1. Beispiel <a href="https://www.polyas.de/wahllexikon/digitale-souveraenitaet "> POLYAS
+                Wahllexikon </a></strong></p>
+            <p>„Unter digitaler Souveränität (Synonym: technologische Souveränität) wird selbstbestimmtes Handeln
+                und Entscheiden von Menschen, Unternehmen und anderen Institutionen im digitalen Raum verstanden.
+                Dazu gehört auch die Fähigkeit, Geschäftsgeheimnisse von Unternehmen und Forschungseinrichtungen
+                sowie die Privatsphäre von Menschen, bestmöglich zu schützen. Sowohl Bürgerinnen und Bürger
+                (Gesellschaft)als auch Wirtschaftsbetriebe und wissenschaftliche Institutionen sollen dabei die
+                Hoheit über ihre eigenen Sicherheits- und Datenschutzinteressen behalten und nicht in
+                unausweichliche Abhängigkeiten geraten.“</p>
+        </blockquote>
+
+        <blockquote>
+            <p><strong>2. Beispiel <a
+                    href="https://www.cio.bund.de/Webs/CIO/DE/digitale-loesungen/digitale-souveraenitaet/digitale-souveraenitaet-node.html">
+                Beispiel CIO-Bund </a></strong></p>
+            <p>“Digitale Souveränität beschreibt die Fähigkeiten und Möglichkeiten von Individuen und Institutionen,
+                ihre Rolle(n) in der digitalen Welt selbstständig, selbstbestimmt und sicher ausüben zu können“.</p>
+        </blockquote>
+
+        <blockquote><p><strong>3. Beispiel <a
+                href="https://www.berlin.de/moderne-verwaltung/aktuelles/immer-gut-informiert/ikt-kurz-erklaert/artikel.1140316.php ">
+            Senatsverwaltung für Inneres, Digitalisierung und Sport </a></strong></p>
+            <p>„Die digitale oder auch technische Souveränität bezeichnet ein selbstbestimmtes Handeln und
+                Entscheiden von Menschen, Behörden, öffentlichen Institutionen und der Wirtschaft im digitalen Raum.
+                Es geht um Infrastrukturen, Daten, Hard- und Software, also das unabhängige und selbstbestimmte
+                Handeln unserer Gesellschaft.
+                Sowohl Bürgerinnen und Bürger als auch Wirtschaft und Wissenschaft haben die Hoheit und Kontrolle
+                über ihre Daten und bestimmen selbst, wer Zugang zu diesen persönlichen Angaben hat. Für Behörden
+                wiederum bedeutet digitale Souveränität, dass sie wirtschaftlich und politisch unabhängig Hard- und
+                Software einsetzen, eine sichere Infrastruktur bieten und die Informationssicherheits- und
+                Datenschutzvorgaben beachten.“
+            </p>
+        </blockquote>
+
+
+        <p>Alle Definitionen haben jedoch Gemeinsamkeiten, sodass im Allgemeinen von digitaler Souveränität
+            gesprochen wird, <strong>wenn eine
+                Person, ein Unternehmen oder sogar ein Staat die Fähigkeit und Möglichkeit hat, die Kontrolle über
+                seine eigenen digitalen Ressourcen und seine digitale Identität zu behalten und unabhängig von
+                äußeren Einflüssen zu handeln.</strong></p>
+        <p>Um die digitale Souveränität einer Web-Anwendung messen zu können, muss zunächst festgelegt werden, wann
+            eine Web-Anwendung als digital souverän angesehen werden kann.</p>
+        <p>Aus der Sicht des Betreibers dieser Web-Anwendung ist das der Fall, wenn der Betreiber
+            die Kontrolle über alle Daten und Funktionen hat, unabhängig von anderen Diensten oder Plattformen ist
+            und Inhalte eigenständig verwalten und veröffentlichen kann. Aus der Sicht des Nutzers kommen für die
+            digitale Souveränität einer Web-Anwendung
+            weitere Punkte dazu. Die Anwendung muss ein hohes Maß an Privatsphäre und Datenschutz gewährleisten. Es
+            sollten so wenig Daten wie möglich über den Nutzer gesammelt und nicht an Dritte weitergegeben werden,
+            und der Nutzer sollte seine Daten selbst verwalten können. Darüber hinaus sind auch Aspekte wie
+            Zuverlässigkeit und Sicherheit von Bedeutung, denn die Nutzer sollen bedenkenlos mit der Website
+            interagieren können. Zudem sollte die Web-Anwendung für alle Nutzergruppen problemlos zu bedienen sein.
+        </p>
+        <p>Aus diesen Überlegungen werden einige Merkmale einer Web-Anwendung abgeleitet. Diese Merkmale werden bei
+            der Messung der digitalen Souveränität berücksichtigt:</p>
+        <ul>
+            <li>
+                <strong>Kontrolle über Daten, Inhalte und Funktionen:</strong> Es kann überprüft werden, ob der
+                Betreiber vollen Zugriff auf alle Funktionen und Einstellungen des CMS hat und ob er seine Daten und
+                Einstellungen frei verwalten und beispielsweise exportieren kann.
+            </li>
+            <li>
+                <strong>Unabhängigkeit von externen Anbietern:</strong> Es kann geprüft werden, ob die
+                Web-Anwendung externe Abhängigkeiten hat und in welchem Umfang sie von Drittanbietern abhängig ist.
+            </li>
+            <li>
+                <strong>Datenschutz und Sicherheit:</strong> Es kann geprüft werden, ob die Web-Anwendung den
+                Datenschutzbestimmungen entspricht und sicher ist. Dazu gehört zum Beispiel Verwendung einer
+                geeigneten Verschlüsselung für die Datenübertragung und Schließung von Sicherheitslücken.
+            </li>
+            <li>
+                <strong>Zugänglichkeit:</strong> Es kann geprüft werden, ob die Web-Anwendung so gestaltet ist,
+                dass sie von vielen Menschen genutzt wird oder ob bestimmte Gruppen ausgeschlossen werden.
+            </li>
+        </ul>
+        <p>Für die Erstellung eines Indexes müssen diese Merkmale berücksichtigt werden und da man sich auf das
+            CMS TYPO3 bezieht, sind aus der TYPO3-Struktur Komponenten abzuleiten, die untersucht werden sollen. Man
+            kann folgende Komponenten herausnehmen und sie näher untersuchen:</p>
+        <ul>
+            <li>Betriebssystem (Bsp. Linux, Microsoft Windows, macOS)</li>
+            <li>Ausführungsumgebung (Bsp. PHP)</li>
+            <li>Webserver (Bsp. Apache, Nginx, Microsoft IIS, Caddy Server)</li>
+            <li>Datenbank (Bsp. MariaDB, Microsoft SQL Server, MySQL, PostgreSQL, SQLite)</li>
+            <li>System Extensions und 3rd Party Extensions</li>
+            <li>Möglichkeiten zur Konfiguration und Customization im Backend und Frontend (Bsp. Tsconfig,
+                TypoScript, Fluid Template Engine)
+            </li>
+            <li>Support und Dokumentation</li>
+        </ul>
+        <p>Hinzu kommen CMS-unabhängige Merkmale wie der menschliche Faktor, einschließlich der Kompetenzen und
+            Abhängigkeiten bei Mitarbeitern und Dienstleistern, sowie Merkmale einer Webanwendung wie die Umsetzung
+            von Datenschutz und Zugänglichkeit.</p>
+
+        <h2>Index für digitale Souveränität bestimmen</h2>
+        <p>Die Ermittlung eines Index für digitale Souveränität kann mithilfe eines Fragebogens erfolgen. Dabei
+            wird auf Hersteller, bestimmte Technologien oder Personen Bezug genommen. Auf diese Weise soll ermittelt
+            werden, wo ein Lock-in-Effekt oder andere Probleme auftreten können, die die digitale Souveränität
+            beeinträchtigen.</p>
+        <p>Der Index verfügt über eine Farbskala, die den Grad der digitalen Souveränität anzeigt. Das Ergebnis
+            reicht von einem "grünen A" für eine optimale Anwendung bis zu einem "roten E" für eine sehr große
+            Anzahl von Verstößen. Es gibt Punkte, die einen positiven oder negativen Einfluss auf den Index haben.
+            Beispiele dafür sind in der nachstehenden Abbildung zu sehen.</p>
+
+        <figure class="figure">
+            <img alt="Beispiele für positive und negative Auswirkung auf die digitale Souveränität"
+                 class="img-fluid"
+                 src="assets/img/Beispiele_fuer_positive_und_negative_Auswirkung_auf_DSI.jpeg"
+                 title="Beispiele für positive und negative Auswirkung auf die digitale Souveränität">
+            <figcaption class="figure-caption">Beispiele für positive und negative Auswirkung auf die digitale
+                Souveränität
+            </figcaption>
+        </figure>
+
+        <p>
+            Der folgende Fragebogen soll helfen, Bereiche zu identifizieren, in denen die digitale Souveränität
+            verletzt werden kann. Die 20 Aussagen sind nach der folgenden Skala zu bewerten:
+        </p>
+        <ul>
+            <li>1 = trifft nicht zu</li>
+            <li>2 = trifft eher nicht zu</li>
+            <li>3 = unentschieden</li>
+            <li>4 = trifft eher zu</li>
+            <li>5 = trifft zu</li>
+        </ul>
+        <p>Die Punkte werden addiert. Das Endergebnis der Indexberechnung kann der folgenden Abbildung entnommen
+            werden.</p>
+
+        <!-- Image -->
+        <figure class="figure">
+            <img alt="Bewertungsskala für den Index für digitale Souveränität" class="img-fluid"
+                 src="assets/img/DSI_Bewertungsskala.jpeg"
+                 title="Bewertungsskala für den Index für digitale Souveränität">
+            <figcaption class="figure-caption">Bewertungsskala für den Index für digitale Souveränität</figcaption>
+        </figure>
+
+        <!-- Form -->
+        <h2>Fragebogen</h2>
+
+
+        <div class="form">
+            <form class="form-group" id="fragebogen">
+
+                <fieldset>
+                    <legend>CMS allgemein</legend>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q1">1. Das CMS ist in einer digital souveränen
+                                Programmiersprache wie zum Beispiel PHP oder Python geschrieben.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q1" name="q1">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q2">
+                                2. Das verwendete CMS kann als digital souverän bezeichnet werden.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q2" name="q2">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q3">
+                                3. Das CMS ist auf einem hohen technischen Niveau.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q3" name="q3">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q4">
+                                4. Das CMS ist auf einer aktuellen und LTS-Version.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q4" name="q4">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q5">
+                                5. Das CMS ist erweiterbar (z.B. durch Extensions oder Plugins).
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q5" name="q5">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q6">
+                                6. Alle installierten Komponenten sind notwendig und werden verwendet.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q6" name="q6">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q7">
+                                7. Alle installierten Komponenten sind auf einem hohen technischen Niveau und in
+                                einer LTS-Version.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q7" name="q7">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>System</legend>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q8">
+                                8. Bei dem Betriebssystem wird Open Source Software eingesetzt.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q8" name="q8">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q9">
+                                9. Das Betriebssystem ist auf einer aktuellen und stabilen Version.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q9" name="q9">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q10">
+                                10. Die Ausführungsumgebung (z.B. PHP) ist auf einer aktuellen und stabilen
+                                Version.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q10" name="q10">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q11">
+                                11. Bei dem Webserver wird Open Source Software eingesetzt.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q11" name="q11">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q12">
+                                12. Der Webserver ist auf einer aktuellen und stabilen Version.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q12" name="q12">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q13">
+                                13. Bei der Datenbank wird Open Source Software eingesetzt
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q13" name="q13">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q14">
+                                14. Die Datenbank ist auf einer aktuellen und stabilen Version.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q14" name="q14">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Konfiguration und Customization</legend>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q15">
+                                15. Backend-Einstellungen (z. B. allgemeine oder benutzerspezifische
+                                Einstellungen) können bei einer Migration auf ein anderes CMS ganz oder teilweise
+                                weiterverwendet werden.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q15" name="q15">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q16">
+                                16. Frontend-Einstellungen (z. B. Seiten-Templates, Seiten-Einstellungen)
+                                können bei einer Migration auf ein anderes CMS ganz oder teilweise weiterverwendet
+                                werden.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q16" name="q16">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Web-Anwendung</legend>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q17">
+                                17. Die Web-Anwendung ist benutzerfreundlich und zugänglich (also auch
+                                barrierearm) gestaltet.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q17" name="q17">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q18">
+                                18. Die Web-Anwendung ist sicher und entspricht den datenschutzrechtlichen
+                                Bestimmungen.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q18" name="q18">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Menschlicher Faktor</legend>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q19">
+                                19. Die Mitarbeiter verfügen über die notwendigen Kompetenzen für die Arbeit
+                                mit dem CMS.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q19" name="q19">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label class="form-label" for="q20">
+                                20. Ein Mitarbeiterwechsel oder ein Wechsel zu einem anderen Dienstleister, der
+                                sich um das CMS kümmert, stellen kein Problem dar.
+                            </label>
+                        </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="q20" name="q20">
+                                <option value="1">trifft nicht zu</option>
+                                <option value="2">trifft eher nicht zu</option>
+                                <option value="3">unentschieden</option>
+                                <option value="4">trifft eher zu</option>
+                                <option value="5">trifft zu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <button id="calculateDSi" onclick="outputDsiResult()" type="button">Index berechnen</button>
+
+                <div class="card">
+                    <div class="card-body">
+                        Hier erscheint der berechnete Index.
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+        <h2>Abschließende Anmerkung</h2>
+        <p>Die meisten Aussagen im Fragebogen sind sehr weit formuliert, und es ist anzunehmen, dass viele weitere
+            Aspekte untersucht werden müssen, um eine solche Aussage zu bewerten.
+        </p>
+        <ul>
+            <li>
+                <strong>Beispiel 1:</strong>
+                Die Aussage "Ein Mitarbeiterwechsel oder ein Wechsel zu einem anderen Dienstleister, der sich um das
+                CMS kümmert, stellen kein Problem dar" beinhaltet indirekt auch die Frage, wie gut alles
+                dokumentiert ist und ob es starke Abhängigkeiten von einzelnen Personen im Unternehmen gibt.
+            </li>
+            <li>
+                <strong>Beispiel 2:</strong> Bei Aussagen wie "Die Web-Anwendung ist benutzerfreundlich und
+                zugänglich (also auch barrierearm) gestaltet" sind zahlreiche Aspekte zu prüfen, auch rechtliche,
+                etwa ob Richtlinien wie BITV 2.0 oder WCAG eingehalten werden müssen.
+            </li>
+            <li>
+                <strong>Beispiel 3:</strong>
+                Bei einigen Komponenten sollte geprüft werden, ob es sich um Open-Source- oder proprietäre Software
+                handelt. In diesem Zusammenhang wäre es möglich, noch feinere Unterscheidungen zu treffen und
+                weitere Lizenzmodelle auf Einschränkungen und Abhängigkeiten zu prüfen. Es gibt
+                Shared-Source-Software, bei der der Quellcode ausgewählten Personen oder Gruppen zur Verfügung
+                gestellt wird, wie dies beispielsweise bei Microsoft der Fall ist. Ein weiteres Modell ist
+                Dual-Licensing, bei der eine Software unter verschiedenen Lizenzen verfügbar ist, wie zum Beispiel
+                MySQL.
+            </li>
+        </ul>
+        <p>
+            <strong>Dieser Test ist für CMS-basierte Web-Anwendungen allgemein und nicht nur für TYPO3 geeignet,
+                aber er ist nur wenig detailliert und sollte lediglich als Anregung dienen, sich mit dem Thema der
+                digitalen Souveränität auseinanderzusetzen.
+            </strong>
+        </p>
+    </article>
+
+    <!-- Aside -->
+    <aside>
+        <h3>Verwendete Literatur</h3>
+        <ul>
+            <li>
+                <a href="https://www.berlin.de/moderne-verwaltung/aktuelles/immer-gut-informiert/ikt-kurz-erklaert/artikel.1140316.php">Berlin.de
+                    - Was bedeutet Digitale Souveränität?</a>
+            </li>
+            <li>
+                <a href="https://www.bmwk.de/Redaktion/DE/Publikationen/Digitale-Welt/schwerpunktstudie-digitale-souveranitaet.html">BMWK
+                    - Schwerpunktstudie Digitale Souveränität</a>
+            </li>
+            <li>
+                <a href="https://www.bmi.bund.de/SharedDocs/downloads/DE/publikationen/themen/it-digitalpolitik/digitalprogramm.html">BMI
+                    - Digitales Deutschland - Souverän. Sicher. Bürgerzentriert.</a>
+            </li>
+            <li>
+                <a href="https://www.cio.bund.de/Webs/CIO/DE/digitale-loesungen/digitale-souveraenitaet/digitale-souveraenitaet-node.html">CIO
+                    Bund - Digitale Souveränität</a>
+            </li>
+            <li>
+                <a href="https://www.cio.bund.de/SharedDocs/downloads/Webs/CIO/DE/digitale-loesungen/eckpunktpapier-digitale-souveraenitaet.pdf?__blob=publicationFile&v=2">CIO
+                    Bund - Eckpunktpapier Digitale Souveraenitaet (PDF-Dokument)</a>
+            </li>
+            <li>
+                <a href="https://www.cio.bund.de/SharedDocs/downloads/Webs/CIO/DE/digitale-loesungen/strategie-zur-staerkung-der-digitalen-souveraenitaet.pdf?__blob=publicationFile&v=1">CIO
+                    Bund - Strategie zur Stärkung der digitalen Souveränität (PDF-Dokument)</a>
+            </li>
+            <li>
+                <a href="https://osb-alliance.de/featured/ein-index-fuer-digitale-souveraenitaet">Open Source Business
+                    Alliance (OSBA) - Ein Index für digitale Souveränität</a>
+            </li>
+            <li>
+                <a href="https://www.oeffentliche-it.de/publikationen/?doc=255694&title=Ein+Open-Source-%C3%96kosystem+f%C3%BCr+die+%C3%B6ffentliche+Verwaltung">Kompetenzzentrum
+                    Öffentliche IT (ÖFIT) - Ein Open-Source-Ökosystem für die öffentliche Verwaltung</a>
+            </li>
+            <li>
+                <a href="https://www.oeffentliche-it.de/selbsttest-digitale-souveraenitaet">Kompetenzzentrum Öffentliche
+                    IT (ÖFIT) - Selbsttest digitale Souveränität</a>
+            </li>
+            <li>
+                <a href="https://www.polyas.de/wahllexikon/digitale-souveraenitaet">POLYAS Wahllexikon - Digitale
+                    Souveränität einfach erklärt</a>
+            </li>
+        </ul>
+    </aside>
+
+</main>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Diese Website ist Bestandteil eines Praktikumsprojekts</h4>
+                <p>Autorin: Anastasia Schmidt <br>
+                    Berliner Hochschule für Technik <br>
+                    Medieninformatik Online (Bachelor) <br>
+                    Modul Praxisprojekt WS 2022/23<br>
+                    Modulbetreuer: Jens-Michalis Papaioannou <br>
+                    Projektbetreuer: Sebastian Kreideweiß <br>
+                    Arbeitgeber: <a href="https://www.cps-it.de/">CPS</a><br>
+                </p>
+            </div>
+            <div class="col">
+                <h4 id="impressum">Impressum</h4>
+                <strong>Angaben gemäß §5 TMG</strong>
+                <p>Anastasia Schmidt<br>
+                    Feldberger Ring 26<br>
+                    12619 Berlin</p>
+                <strong>Kontakt</strong>
+                <p>E-Mail: anastasia.kolomiec@outlook.de</p>
+                <strong>Bildernachweis</strong>
+                <p> Banner: Bild von <a
+                        href="https://pixabay.com/de/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3075828">Gerd
+                    Altmann</a> auf <a
+                        href="https://pixabay.com/de//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3075828">Pixabay</a>
+                    <br> Alle anderen Bilder auf der Website sind eigene Werke. </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="js/toTop.js"></script>
+<script src="js/calculateDsi.js"></script>
+
+</html>

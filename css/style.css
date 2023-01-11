@@ -1,0 +1,117 @@
+@import "variables/colors.css";
+@import "variables/spacing.css";
+
+body {
+    background-color: var(--light-2);
+    margin: 0;
+}
+
+.introduction {
+    background-color: var(--light-3);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px;
+    margin: 0;
+}
+
+.introduction p {
+    color: var(--dark-2);
+    padding: 0;
+    text-align: left;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+article {
+    background-color: var(--light-3);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px;
+    color: var(--light-3);
+    padding: var(--spacing-unit-s);
+    position: relative;
+    top: -150px;
+}
+
+article p {
+    padding: 0;
+}
+
+article, .form {
+    background-color: var(--light-3);
+}
+
+blockquote {
+    padding-left: var(--spacing-unit-s);
+    padding-top: var(--spacing-unit-s);
+}
+
+blockquote:before {
+    bottom: -30px;
+    color: var(--dark-3);
+    content: "\201C";
+    font-family: serif;
+    font-size: 5em;
+    left: -30px;
+    line-height: 0.1em;
+    position: relative;
+}
+
+footer {
+    margin-top: var(--spacing-unit-s);
+}
+
+footer {
+    background-color: var(--dark-2);
+    margin-top: var(--spacing-unit-xl);
+    padding: var(--spacing-unit-s);
+}
+
+@media (min-width: 800px) {
+    p {
+        text-align: justify;
+    }
+
+    .introduction-text {
+        background-color: rgba(246, 246, 246, .96);
+        box-shadow: rgba(0, 0, 0, 0.2) 0 3px 3px;
+        color: var(--dark-2);
+        margin-bottom: var(--spacing-unit-m);
+        margin-left: var(--spacing-unit-s);
+        margin-right: var(--spacing-unit-s);
+        padding: var(--spacing-unit-s);
+        position: relative;
+        text-align: center;
+        top: -150px;
+    }
+}
+
+@media (max-width: 799px) {
+    article p {
+        text-align: left;
+    }
+
+    .introduction {
+        background-color: var(--light-3);
+    }
+
+    .introduction-text {
+        margin-bottom: var(--spacing-unit-l);
+        padding: var(--spacing-unit-s);
+        text-align: left;
+    }
+
+    .introduction h1 {
+        font-size: 2rem;
+        padding: 0;
+        text-align: left;
+    }
+
+    aside {
+        position: relative;
+        top: -100px;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}

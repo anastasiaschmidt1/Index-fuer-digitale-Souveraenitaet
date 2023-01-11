@@ -1,0 +1,8 @@
+:root {
+    --spacing-unit-0: 0px;
+    --spacing-unit-xs: 10px;
+    --spacing-unit-s: 30px;
+    --spacing-unit-m: 50px;
+    --spacing-unit-l: 100px;
+    --spacing-unit-xl: 150px;
+}

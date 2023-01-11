@@ -1,0 +1,68 @@
+@import "variables/colors.css";
+@import "variables/spacing.css";
+
+#fragebogen .row {
+    padding-bottom: var(--spacing-unit-xs);
+}
+
+#fragebogen select {
+    background-color: var(--light-2);
+    border-radius: 0;
+}
+
+#fragebogen select:hover {
+    background-color: var(--dark-3);
+    color: var(--light-3)
+}
+
+#fragebogen .card {
+    background-color: var(--light-2);
+    border-radius: 0;
+}
+
+#fragebogen .bg-green {
+    background-color: #008037;
+}
+
+#fragebogen .bg-lightgreen {
+    background-color: #c9e265;
+}
+
+#fragebogen .bg-yellow {
+    background-color: #ffde59;
+}
+
+#fragebogen .bg-orange {
+    background-color: #ffbd59;
+}
+
+#fragebogen .bg-red {
+    background-color: #ff1616;
+}
+
+#calculateDSi {
+    background-color: var(--dark-3);
+    border: none;
+    bottom: 20px;
+    color: var(--light-3);
+    margin-bottom: var(--spacing-unit-s);
+    padding: 12px 16px;
+    transition: background-color 0.2s;
+
+}
+
+#calculateDSi:hover {
+    background-color: var(--light-2);
+    color: var(--dark-3);
+}
+
+#calculateDSi i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+@media (max-width: 575px) {
+    #fragebogen .row {
+        padding-bottom: var(--spacing-unit-s);
+    }
+}

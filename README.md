@@ -10,6 +10,6 @@ Modulbetreuer: Jens-Michalis Papaioannou
 Arbeitgeber: CPS GmbH  
 Projektbetreuer: Sebastian Kreideweiß
 
-Webseite: wird ergänzt
+Webseite: https://web-souveraen.de/
 
 Januar 2023

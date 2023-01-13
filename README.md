@@ -7,7 +7,7 @@ Modul Praxisprojekt
 
 Autorin: Anastasia Schmidt  
 Modulbetreuer: Jens-Michalis Papaioannou  
-Projektbetreuer: Sebastian Kreideweiß
+Projektbetreuer: Sebastian Kreideweiß  
 Arbeitgeber: CPS https://www.cps-it.de/  
 
 Webseite zum Projekt: https://web-souveraen.de/
